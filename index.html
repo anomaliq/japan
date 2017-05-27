@@ -1,101 +1,158 @@
-<!DOCTYPE html>
-<html>
-<head>
- 	<meta charset="utf-8">
- 	<title>Japan Website</title>
- 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">	
- 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+body {
+	margin: 0px;
+}
+
+a { 
+	display: inline-block; 
+}
+
+header, .quote {
+	text-align: center;
+	color: white;
+	height: 500px;
+	background-color: lightgreen;
+	background-image: url(../images/header-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background:lightgreen url(../images/header-bg.jpg) center no-repeat;
+	padding-top: 150px;
+}
+.quote {
+	background:lightgreen url(../images/quote-bg.jpg) center no-repeat;
+	background-attachment: fixed;
+	clear:both;
+	background-size: cover;
+}
+
+.quote h1 {
+	text-transform: uppercase;
+}
+
+.quote p{
+	font-style: italic;
+	width:800px;
+	margin: 0 auto;
+}
+
+header p {
+	font-style: italic
+}
+
+header h1 {
+	color:white;
+	font-size: 60px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+
+header a, .quote a {
+	color: white;
+	border: 3px solid white;
+	font-family: 'Montserrat', sans-serif;
+	padding:10px 40px;
+	text-decoration: none;
+}
+
+header a:hover {
+	background: white;
+	color:black;
+}
+
+
+.quote a:hover {
+	background: white;
+	color:black;
+}
+
+.btn {
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	border: 5px solid black;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-style:bold;
+	text-transform: uppercase;
+}
+.btn:hover {
+	background: black;
+	color: white;
+}
 	
-</head>
-<body>
 
-<nav>
-<ul>
-	<li><a class="logo" href="#">Japan Journal </a></li>
-	<li><a href="#">About </a></li>
-	<li><a href="#">Contact Us</a></li>
-</ul>
-</nav>
+h1,h2,h3,h4{
+	font-family: 'Montserrat', sans-serif;
+}
 
-<header>
-	<p>"The American Who Taught Tokyo How to Make Ramen"</p>
-	<h1>Tokyo</h1>
-	<a href="#">Explore</a>
-</header>
+nav ul li {
+	display: inline;
+}
 
-<section class="categories">
-<h2>Dive into Japan</h2>
-	<ul>
-		<li>
-			<img src="images/eat-section.jpg" alt="Eat in Japan"> 
-    		<h3>Eat</h3>
-    		<p>Satisfy Cravings</p>
-    		<a class="btn" href="#">Explore</a>
-		</li>
+nav a {
+	color:#863c53;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	margin-right: 15px;
+}
 
-		<li>
-			<img src="images/learn-section.jpg" alt="Learn About Japan"> 
-    		<h3>Learn</h3>
-    		<p>Culture Vulture</p>
-    		<a class="btn" href="#">Explore</a>
-		</li>
+.logo {
+	color: red;
+	margin-right:30px;
+}
 
-		<li>
-			<img src="images/know-section.jpg" alt="Know About Japan"> 
-    		<h3>Know</h3>
-    		<p>Satisfy Cravings</p>
-    		<a class="btn" href="#">Explore</a>
-		</li>
+.categories, .featured {
+	text-align: center;
+}
 
-	<li>
-			<img src="images/visit-section.jpg" alt="Vist Japan"> 
-    		<h3>Visit</h3>
-    		<p>Travel Intel</p>
-    		<a class="btn" href="#">Explore</a>
-		</li>
-	</ul>
-</section>
+.categories ul, .featured ul {
+	padding: 0;
+}
 
-<section class="quote">
-	<h1>Mount Fuji</h1>
-	<p>"Mount Fuji, located on Honshu Island, is the highest mountain in Japan at. An active stratovolcano that last erupted in 1707–08, Mount Fuji lies about south-west of Tokyo, and can be seen from there on a clear day."</p>
-	<a href="#">Explore</a>
-</section>
+.categories ul li, .featured ul li {
+	width: calc(84%/4);
+	float: left;
+	list-style: none;
+	padding: 0 2%;
+	margin-bottom:50px;
+}
 
-<section class="featured">
-<h2>Featured Stories</h2>
-	<ul>
-		<li>
-			<img src="images/kimono-card.jpg" alt="kimono">
-			<h4>Learn</h4>
-			<p>Tokyo</p>
-			<h3>When to wear a kimono</h3>
-			<p>A History of the Kimono</p>
-		</li>
+.categories img {
+	max-width: 100%;
+}
 
-		<li>
-			<img src="images/tower-card.jpg" alt="tower">
-			<h4>Go</h4>
-			<p>Tokyo</p>
-			<h3>Tokyo Tower</h3>
-			<p>A view of Tokyo's streets from above</p>
-		</li>
+.categories p {
+	font-family: georgia;
 
-		<li>
-			<img src="images/monkey-card.jpg" alt="monkey">
-			<h4>Go</h4>
-			<p>Nagano</p>
-			<h3>Jigokudani Monkey Park</h3>
-			<p>The Snow Monkeys of Jigokudani</p>
-		</li>
-  	</ul>
-</section>
+}
 
-<footer>
-	<img src="images/facebook.png" alt="Facebook">
-	<img src="images/twitter.png" alt="Twitter">
-	<p>Copyright 2017</p>
 
-</footer>
-</body>
-</html>
+
+.featured ul li {
+	width: calc(84%/3);
+}
+
+.featured img {
+	max-width: 100%;
+}
+
+.featured h4 {
+	text-transform: uppercase;
+	color: red;
+	
+}
+
+footer {
+	clear:both;
+	text-align: center;
+	background-color:black;
+	color:white;
+	font-family: 'Montserrat',sans-serif,
+	padding:20px 0;
+}
+
+footer img {
+	width: 50px;
+	height: auto;
+}
